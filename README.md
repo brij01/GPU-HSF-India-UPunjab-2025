@@ -53,15 +53,6 @@ Session 3 - https://1drv.ms/p/c/5a70ac10b7f66de0/EaGidsT09EtFlgUtTcgQb4gBoWJmIyF
   - Code: `01-nbody.cu`
   - Notebook: `GPU challenge.ipynb`
 
-- **06/** – Neural Network Demos  
-    - Simple neural network implementations and GPU acceleration examples
-
-- **07/** – Analysis Scripts  
-    - Data analysis, visualization, and benchmarking GPU code
-
-- **08/** – Notebook Verification Tools  
-    - Utilities for extracting code from notebooks and checking notebook integrity  
-    - `verify_notebook.py`: Python script for verifying and extracting code from Jupyter notebooks
 
 
 ## Notebooks
