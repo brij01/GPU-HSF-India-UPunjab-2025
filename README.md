@@ -1,28 +1,57 @@
+<!--
+README Documentation Comment
+
+This README provides an overview of the GPU-CoDaSHep-Princeton repository, which contains tutorials, demos, and analysis scripts for GPU programming in the context of the Princeton CoDAS-HEP course. It details the repository structure, including modules on CUDA basics, unified memory, streaming, profiling, advanced topics, neural network demos, analysis scripts, and notebook verification tools. The README also lists available presentations, describes the contents and purpose of each module, and provides instructions for getting started and using the verification script. Attribution for external code and licensing information are included. The document is intended to guide users through the repository's resources and facilitate learning and analysis of GPU programming techniques.
+-->
 # GPU-CoDaSHep-Princeton
 
-This repository provides tutorials, demos, and analysis scripts for GPU programming, tailored for the Princeton CoDAS-HEP course. Materials are organized into modules covering CUDA basics, unified memory, streaming, profiling, and neural network demos.
+This repository provides tutorials, demos, and analysis scripts for GPU programming, tailored for the Princeton CoDAS-HEP course. Materials are organized into modules covering CUDA basics, unified memory, streaming, profiling, HEP physics usecases and neural network demos.
+
+
+
+Presentations:
+Session 1 - https://1drv.ms/p/c/5a70ac10b7f66de0/EbfhsTCX3nZJjHrZLxds4tEB-xDZK00qdVukcO2Nc0b7Lg?e=3aYGxA
+Session 2 - https://1drv.ms/p/c/5a70ac10b7f66de0/ERfEQVlc9P1Avl1ZHmfzGu8ByfAcnfC_iya-4LsfrViYXw?e=89gSlM
+Session 3 - https://1drv.ms/p/c/5a70ac10b7f66de0/EaGidsT09EtFlgUtTcgQb4gBoWJmIyFjskZbDWFtlI0oUQ?e=78C8aH
+
+
 
 ## Repository Structure
 
 - **01/** – Introductory CUDA C notebooks and exercises  
-    - `AC_CUDA_C.ipynb`: Main CUDA C tutorial notebook  
-    - Subfolders:  
-        - `01-hello/` to `09-heat/`: Step-by-step CUDA examples (hello world, parallelism, indices, loops, memory allocation, error handling, vector addition, matrix multiplication, heat conduction)  
-        - `edit/`: Editable files for exercises
+  - Presentations (`AC_CUDA_C_*.pptx`)
+  - Main tutorial notebook: `Session1.ipynb`
+  - Subfolders:  
+    - `01-hello/` to `09-heat/`: Step-by-step CUDA examples (hello world, parallelism, indices, loops, memory allocation, error handling, vector addition, matrix multiplication, heat conduction)  
+    - `edit/`: Editable files for exercises
 
 - **02/** – Unified Memory tutorials  
-    - `Unified Memory.ipynb`: Unified memory concepts and demos  
-    - Subfolders: Vector addition, device properties, page faults, prefetching, SAXPY example, and editable files
+  - Main notebook: `Session2_advanced.ipynb`
+  - Subfolders: Vector addition, device properties, page faults, prefetching, SAXPY example, and editable files
 
 - **03/** – Streaming and Visual Profiling  
-    - `Streaming and Visual Profiling.ipynb`: Streaming and profiling notebook  
-    - Subfolders: Vector addition, kernel initialization, prefetch checks, stream introduction, manual memory allocation, overlap transfer, n-body simulation, and editable files
+  - Main notebook: `Streaming and Visual Profiling.ipynb`
+  - Subfolders: Vector addition, kernel initialization, prefetch checks, stream introduction, manual memory allocation, overlap transfer, n-body simulation, and editable files
 
 - **04/** – Additional CUDA modules  
-    - Contains further CUDA exercises and scripts
+  - Notebooks: `lesson-5-project.ipynb`, `lesson-5-workbook.ipynb`, `Session3_Python-GPU_HEP.ipynb`
 
-- **05/** – Advanced CUDA topics and performance analysis  
-    - Exercises on optimizing memory access, shared memory usage, and occupancy
+- **05/** – Generator tutorials  
+  - Notebooks: `generator_tutorial_gpu.ipynb`, `generator_tutorial_gpu_annotated.ipynb`
+
+- **06/** – HEP analysis and demos  
+  - Notebooks: `gpu_dd4hep_tilecal.ipynb`
+  - Documentation: `gpu_geant4_dd4hep_cuda_notebook.md`
+  - Tutorials: `particle_physics_generators_tutorial.ipynb`
+
+- **07/** – Neural Network Demos and Analysis Scripts  
+  - Notebooks: `cuda_neural_network_demo_complete.ipynb`
+  - Scripts: `verify_notebook.py`
+  - Demos: `gpu-demo/`
+
+- **08/** – Miscellaneous challenges and verification  
+  - Code: `01-nbody.cu`
+  - Notebook: `GPU challenge.ipynb`
 
 - **06/** – Neural Network Demos  
     - Simple neural network implementations and GPU acceleration examples
@@ -34,6 +63,7 @@ This repository provides tutorials, demos, and analysis scripts for GPU programm
     - Utilities for extracting code from notebooks and checking notebook integrity  
     - `verify_notebook.py`: Python script for verifying and extracting code from Jupyter notebooks
 
+
 ## Notebooks
 
 Each module contains Jupyter notebooks (`.ipynb`) with explanations, code samples, and exercises. Topics include:
@@ -43,11 +73,14 @@ Each module contains Jupyter notebooks (`.ipynb`) with explanations, code sample
 - Parallel algorithms (vector/matrix operations, heat conduction)
 - Streaming and concurrency
 - Profiling and performance analysis
+- HEP event generation and analysis
+- Neural network demos
+
 
 ## Scripts
 
-- [`08/verify_notebook.py`](08/verify_notebook.py):  
-    Analyze notebook structure, extract code cells to files, and report statistics on content and coverage.
+- [`07/verify_notebook.py`](07/verify_notebook.py):  
+  Analyze notebook structure, extract code cells to files, and report statistics on content and coverage.
 
 ## Credits
 
