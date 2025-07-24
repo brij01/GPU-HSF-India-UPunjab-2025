@@ -8,19 +8,24 @@ jupyter:
     name: python3
 ---
 
+
 # GPU-Accelerated Geant4 Simulation with DD4hep & Celeritas
+
+> **Reference:**
+> Celeritas project: https://github.com/celeritas-project/celeritas
+> Geometry & macros: https://github.com/celeritas-project/atlas-tilecal-integration
+> Official releases: https://github.com/celeritas-project/celeritas/releases
+>
+> **Hardware:** Linux/WSL2 + CUDA 11/12 GPU (compute 6.0+). CPU-only fallback included.
 
 This **self-contained** Jupyter Lab notebook guides you through ≈ 40 minutes of hands-on detector simulation that:
 
-1. Installs a modern *GPU-ready* Geant4 + DD4hep + **Celeritas** stack with the 
-   open-source **Spack** package manager (↝ no mysterious links!).
+1. Installs a modern *GPU-ready* Geant4 + DD4hep + **Celeritas** stack with the open-source **Spack** package manager.
 2. Loads the **ATLAS Tile Calorimeter** geometry from DD4hep.
 3. Off-loads electromagnetic tracking to an NVIDIA GPU.
 4. Benchmarks CPU vs GPU timing.
 5. Visualises hit-level energy deposition.
 6. Provides two short exercises **with solutions**.
-
-> **Hardware**: Linux/WSL2 + CUDA 11/12 GPU (compute 6.0+).  A CPU-only fallback is included – it is slower but works everywhere.
 
 ---
 
@@ -63,24 +68,26 @@ If you **do not** have a CUDA GPU set the env‐var `export CELER_DISABLE_DEVICE
 ## 1  Install Geant4 + DD4hep + Celeritas *(≈15 min on fast SSD)*
 
 ```bash
-# %%bash
-. $HOME/spack/share/spack/setup-env.sh
+```bash
+To install Celeritas and its dependencies, use Spack as follows:
 
-# Choose a GPU architecture or leave empty for CPU-only
-CUDA_ARCH=80   # 80=Ampere; 86=RTX 30xx; 89=Hopper; comment out if unknown
+```bash
+# Install Spack
+git clone --depth=2 https://github.com/spack/spack.git
+. spack/share/spack/setup-env.sh
 
-spack config add packages:all:variants "cxxstd=20 +cuda cuda_arch=$CUDA_ARCH" || true
+```bash
+# Set up CUDA (if you have a GPU)
+spack external find cuda
 
-# Create a lightweight Spack environment to keep things tidy
-spack env create tilegpu-env || true
-spack env activate tilegpu-env
+```bash
+# Set default configuration (replace cuda_arch=80 with your GPU architecture)
+spack config add packages:all:variants:"cxxstd=17 +cuda cuda_arch=80"
 
-# Add required packages (≈ 3 GB build)
-spack add geant4@11.2.1 +vecgeom +threads +qt
-spack add dd4hep@1.28.0 +geant4
-spack add celeritas@0.6.1 +geant4
-spack concretize -f
-spack install --fail-fast
+```bash
+# Install Celeritas
+spack install celeritas
+spack load celeritas
 ```
 
 Once finished:
@@ -90,6 +97,7 @@ spack load geant4 dd4hep celeritas
 ```
 
 Spack automatically exposes `geant4-config`, `ddsim`, and `Celeritas` headers & libs 😊.
+See the [Celeritas documentation](https://github.com/celeritas-project/celeritas) for more details and integration steps.
 
 ---
 
