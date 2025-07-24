@@ -10,9 +10,11 @@ This repository provides tutorials, demos, and analysis scripts for GPU programm
 
 
 Presentations:
-Session 1 - https://1drv.ms/p/c/5a70ac10b7f66de0/EbfhsTCX3nZJjHrZLxds4tEB-xDZK00qdVukcO2Nc0b7Lg?e=3aYGxA
-Session 2 - https://1drv.ms/p/c/5a70ac10b7f66de0/ERfEQVlc9P1Avl1ZHmfzGu8ByfAcnfC_iya-4LsfrViYXw?e=89gSlM
-Session 3 - https://1drv.ms/p/c/5a70ac10b7f66de0/EaGidsT09EtFlgUtTcgQb4gBoWJmIyFjskZbDWFtlI0oUQ?e=78C8aH
+- Session 1 - https://1drv.ms/p/c/5a70ac10b7f66de0/EbfhsTCX3nZJjHrZLxds4tEB-xDZK00qdVukcO2Nc0b7Lg?e=3aYGxA
+
+- Session 2 - https://1drv.ms/p/c/5a70ac10b7f66de0/ERfEQVlc9P1Avl1ZHmfzGu8ByfAcnfC_iya-4LsfrViYXw?e=89gSlM
+
+- Session 3 - https://1drv.ms/p/c/5a70ac10b7f66de0/EaGidsT09EtFlgUtTcgQb4gBoWJmIyFjskZbDWFtlI0oUQ?e=78C8aH
 
 
 
