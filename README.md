@@ -1,20 +1,19 @@
 <!--
 README Documentation Comment
 
-This README provides an overview of the GPU-CoDaSHep-Princeton repository, which contains tutorials, demos, and analysis scripts for GPU programming in the context of the Princeton CoDAS-HEP course. It details the repository structure, including modules on CUDA basics, unified memory, streaming, profiling, advanced topics, neural network demos, analysis scripts, and notebook verification tools. The README also lists available presentations, describes the contents and purpose of each module, and provides instructions for getting started and using the verification script. Attribution for external code and licensing information are included. The document is intended to guide users through the repository's resources and facilitate learning and analysis of GPU programming techniques.
+This README provides an overview of the GPU-HSF-India-UPunjab-2025 repository, which contains tutorials, demos, and analysis scripts for GPU programming in the context of the HSF-India parallel programming and GPU course. It details the repository structure, including modules on CUDA basics, unified memory, streaming, profiling, advanced topics, neural network demos, analysis scripts, and notebook verification tools. The README also lists available presentations, describes the contents and purpose of each module, and provides instructions for getting started and using the verification script. Attribution for external code and licensing information are included. The document is intended to guide users through the repository's resources and facilitate learning and analysis of GPU programming techniques.
 -->
-# GPU-CoDaSHep-Princeton
+# GPU-HSF-India-UPunjab-2025
 
-This repository provides tutorials, demos, and analysis scripts for GPU programming, tailored for the Princeton CoDAS-HEP course. Materials are organized into modules covering CUDA basics, unified memory, streaming, profiling, HEP physics usecases and neural network demos.
-
+This repository provides tutorials, demos, and analysis scripts for GPU programming, tailored for the HSF-India GPU course. Materials are organized into modules covering CUDA basics, unified memory, streaming, profiling, HEP physics usecases and neural network demos.
 
 
 Presentations:
-- Session 1 - https://1drv.ms/p/c/5a70ac10b7f66de0/EbfhsTCX3nZJjHrZLxds4tEB-xDZK00qdVukcO2Nc0b7Lg?e=3aYGxA
+- Session 1 - https://1drv.ms/p/c/5a70ac10b7f66de0/IQRorVTGUoH2SoGFYU4ZN59QAW0z_4e0xtnG8t7HhS3xASc
 
-- Session 2 - https://1drv.ms/p/c/5a70ac10b7f66de0/ERfEQVlc9P1Avl1ZHmfzGu8ByfAcnfC_iya-4LsfrViYXw?e=89gSlM
+- Session 2 - https://1drv.ms/p/c/5a70ac10b7f66de0/IQSIhw6iI0csToQqFloZb6rtAX2vFNhJqR_kf9K83DPl3Fg
 
-- Session 3 - https://1drv.ms/p/c/5a70ac10b7f66de0/EaGidsT09EtFlgUtTcgQb4gBoWJmIyFjskZbDWFtlI0oUQ?e=78C8aH
+- Session 3 - https://1drv.ms/p/c/5a70ac10b7f66de0/IQRJghX87dh-SaFOcgFho8kWAT6QY4Ukeox9B9u2-dS1zeI
 
 
 
